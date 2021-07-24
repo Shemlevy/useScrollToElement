@@ -1,8 +1,8 @@
 {
   "name": "use-scroll-to-element",
-  "version": "2.0.0",
-  "description": "dexc",
-  "main": "index.ts",
+  "version": "3.0.4",
+  "description": "on test",
+  "main": "index.js",
   "author": "Shem Levy",
   "license": "ISC",
   "devDependencies": {
