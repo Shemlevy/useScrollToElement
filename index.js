@@ -1,5 +1,6 @@
-import { useLayoutEffect } from 'react';
 import { v4 as uuid } from 'uuid';
+import { useLayoutEffect } from 'react';
+
 import { Deferred } from './deferred';
 
 /**
@@ -44,7 +45,7 @@ import { Deferred } from './deferred';
 
 
 
-const scrollToElementId = (id: string) => {
+const scrollToElementId = (id) => {
   const el = document.getElementById(id);
   el?.scrollIntoView({
     behavior: 'smooth',
@@ -58,9 +59,10 @@ export class ScrollToElement {
 
   df = new Deferred();
 
-  scroll = async () => {
-    await this.df.promise;
-    setTimeout(() => scrollToElementId(this.id), 0);
+  scroll = () => {
+    this.df.promise.then(() => {
+      setTimeout(() => scrollToElementId(this.id), 0);
+    });
   };
 
   useScroll = () => {
