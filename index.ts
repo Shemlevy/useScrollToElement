@@ -1,5 +1,7 @@
+// @ts-ignore
+import uuid from 'uuid';
 import { useLayoutEffect } from 'react';
-import { v4 as uuid } from 'uuid';
+
 import { Deferred } from './deferred';
 
 /**
