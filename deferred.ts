@@ -7,8 +7,4 @@ export class Deferred<T> {
     this.resolve = resolve;
     this.reject = reject;
   });
-
-  whenReady(callback: (value: T) => any) {
-    return this.promise.then(callback);
-  }
 }
