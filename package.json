@@ -1,8 +1,8 @@
 {
   "name": "use-scroll-to-element",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "on test",
-  "main": "index.js",
+  "main": "index.mjs",
   "author": "Shem Levy",
   "license": "ISC",
   "repository": {
