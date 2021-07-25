@@ -1,7 +1,7 @@
 # use-scroll-to-element
 
 > ✨ Scroll to element give the ability to scroll to any element in the app from a place far a head
-> without knowing on the Component anything (if it has been rendered or not)
+>    without knowing on the Component anything (if it has been rendered or not)
 
 #Getting started
 
