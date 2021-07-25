@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Shem Levy",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shemlevy/useScrollToElement"
+  },
   "devDependencies": {
     "@types/node": "^16.4.1",
     "@types/react": "^17.0.15",

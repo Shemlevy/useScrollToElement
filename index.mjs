@@ -1,8 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import { useLayoutEffect } from 'react';
 
-import { Deferred } from './deferred';
-
 /**
  * ScrollToElement can apply just on "real" element that is on the DOM - will not work on virtual lists etc.
  * @scroll - promise function once solved will scroll to the element by the id was generated from useScroll.
@@ -43,7 +41,12 @@ import { Deferred } from './deferred';
  *
  */
 
-
+class Deferred {
+  promise = new Promise((resolve, reject) => {
+    this.resolve = resolve;
+    this.reject = reject;
+  });
+}
 
 const scrollToElementId = (id) => {
   const el = document.getElementById(id);
