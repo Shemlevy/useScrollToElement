@@ -1,59 +1,58 @@
 # use-scroll-to-element
 
+
+> ✨ React hook for using scroll to an element before it been rendered
+
 > ✨ Scroll to an element gives the ability to scroll to any element in the app from a place far ahead 
 >    without knowing on the Component anything (if it has been rendered or not)
 
 > useScrollToElement HOOK - a tiny hook that useLayoutEffect, ensuring the element is on Dom.
 > let you the ability to dispatch an action before the component has rendered and the scroll will happen right after it appears.
 
-#Getting started
-    import { ScrollToElement } from "use-scroll-to-element";
-    
-    export const {
-        useScroll: useScrollToBottom,
-        scroll: scrollToBottom
-    } = new ScrollToElement();
+## Install
+```bash
+npm install --save use-scroll-to-element
+```
 
+## Usage
+```tsx
+import { ScrollToElement } from "use-scroll-to-element";
+
+export const {
+  useScroll: useScrollToImg,
+  scroll: scrollToImg
+} = new ScrollToElement();
+```
 
 
 * ScrollToElement can apply just on "real" elements that is on the DOM - will not work on virtual lists etc.
 * @scroll - promise function once solved will scroll to the element by the id was generated from useScroll.
 * @useScroll - should be placed in the Component element, returning the id to attach to the desired scrolled element.
 
-        @return   {Object}   
-        object with scroll and useScroll
-    
 
 * @scroll - promise function once solved will scroll to the element by the id was generated from useScroll.
 * @useScroll - should be placed in the Component element, returning the id to attach to the desired scrolled element.
 
-        @example - 
-        export const {
-            scroll: scrollToImg,
-            useScroll: useScrollToImg,
-        } = new ScrollToElement();
   
-
-
 **./components/Main.js**
+```tsx
+export const Main = () => {
+  const id = useScrollToImg();
 
-    export const Main = () => {
-      const id = useScrollToImg()
-
-      return
-        (<>
+  return (
+          <>
             <div>Hello World</div>
             {...lotsOfElements}
-            <img id={id} src='./image.jpg' />
-        </>)
-      }
+            <img id={id} src="./image.jpg" />
+          </>
+  );
+};
+```
 
-  
-
-**./modals/Main.js**
-
-    export const Main = () =>
-        (<button onClick={scrollToImg}>Show Image</button>)
+**./modals/GoToImage.js**
+```tsx
+export const GoToImage = () => <button onClick={scrollToImg}>Show Image</button>;
+```
 
 
 

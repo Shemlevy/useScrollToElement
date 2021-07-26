@@ -1,7 +1,7 @@
 {
   "name": "use-scroll-to-element",
-  "version": "3.0.9",
-  "description": "on test",
+  "version": "3.1.0",
+  "description": "React hook for using scroll to an element before it been rendered",
   "main": "index.mjs",
   "type": "module",
   "author": "Shem Levy",
