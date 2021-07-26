@@ -1,4 +1,4 @@
-import { v4 as uuid } from 'uuid';
+import { nanoid } from 'nanoid'
 import { useLayoutEffect } from 'react';
 
 /**
@@ -58,7 +58,7 @@ const scrollToElementId = (id) => {
 };
 
 export class ScrollToElement {
-  id = uuid();
+  id = nanoid();
 
   df = new Deferred();
 

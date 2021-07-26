@@ -1,12 +1,14 @@
 # use-scroll-to-element
 
-> ✨ Scroll to element give the ability to scroll to any element in the app from a place far a head
+> ✨ Scroll to an element gives the ability to scroll to any element in the app from a place far ahead 
 >    without knowing on the Component anything (if it has been rendered or not)
 
+> useScrollToElement HOOK - a tiny hook that useLayoutEffect, ensuring the element is on Dom.
+> let you the ability to dispatch an action before the component has rendered and the scroll will happen right after it appears.
+
 #Getting started
-
     import { ScrollToElement } from "use-scroll-to-element";
-
+    
     export const {
         useScroll: useScrollToBottom,
         scroll: scrollToBottom
