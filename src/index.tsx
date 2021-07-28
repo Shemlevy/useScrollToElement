@@ -52,7 +52,6 @@ const scrollToElementId = (id: string) => {
 
 export class ScrollToElement {
   private id = getId();
-
   private df = new Deferred();
 
   scroll = () => {
