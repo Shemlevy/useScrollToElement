@@ -51,9 +51,9 @@ const scrollToElementId = (id: string) => {
 };
 
 export class ScrollToElement {
-  id = getId();
+  private id = getId();
 
-  df = new Deferred();
+  private df = new Deferred();
 
   scroll = () => {
     this.df.promise.then(() => {
