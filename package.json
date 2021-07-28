@@ -45,25 +45,19 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/t.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/t.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/t.esm.js",
-      "limit": "10 KB"
-    }
+  "keywords": [
+    "react",
+    "hook",
+    "scroll-to-element",
+    "scroll"
   ],
+  "module": "dist/use-scroll-to-element.esm.js",
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.5.5",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "husky": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "size-limit": "^5.0.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.0",
     "typescript": "^3.9.10"
