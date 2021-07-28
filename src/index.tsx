@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid'
 import { useLayoutEffect } from 'react';
 
 /**
@@ -62,7 +61,7 @@ const scrollToElementId = (id: string) => {
 };
 
 export class ScrollToElement {
-  id = nanoid();
+  id = Date.now().toString();
 
   df = new Deferred();
 
