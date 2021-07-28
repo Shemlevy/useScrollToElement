@@ -1,4 +1,5 @@
 import { useLayoutEffect } from 'react';
+import { Deferred, getId } from './utils';
 
 /**
  * ScrollToElement can apply just on "real" element that is on the DOM - will not work on virtual lists etc.
@@ -40,17 +41,6 @@ import { useLayoutEffect } from 'react';
  *
  */
 
-class Deferred<T> {
-  resolve!: (result: T) => void;
-
-  reject!: (error: any) => void;
-
-  promise = new Promise<T>((resolve, reject) => {
-    this.resolve = resolve;
-    this.reject = reject;
-  });
-}
-
 const scrollToElementId = (id: string) => {
   const el = document.getElementById(id);
   el?.scrollIntoView({
@@ -61,7 +51,7 @@ const scrollToElementId = (id: string) => {
 };
 
 export class ScrollToElement {
-  id = Date.now().toString();
+  id = getId();
 
   df = new Deferred();
 
@@ -81,4 +71,3 @@ export class ScrollToElement {
     return this.id;
   };
 }
-
