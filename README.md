@@ -3,7 +3,7 @@
 
 > ✨ React hook for using scroll to an element before it been rendered
 
-> ✨ Scroll to an element gives the ability to scroll to any element in the app from a place far ahead 
+> ✨ Scroll to an element gives the ability to scroll to any element in the app from a place far ahead
 >    without knowing on the Component anything (if it has been rendered or not)
 
 > useScrollToElement HOOK - a tiny hook that useLayoutEffect, ensuring the element is on Dom.
@@ -33,7 +33,7 @@ export const {
 * @scroll - promise function once solved will scroll to the element by the id was generated from useScroll.
 * @useScroll - should be placed in the Component element, returning the id to attach to the desired scrolled element.
 
-  
+
 **./components/Main.js**
 ```tsx
 export const Main = () => {
