@@ -19,9 +19,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "prepare": "tsdx build"
   },
   "repository": {
     "type": "git",
@@ -49,7 +47,9 @@
     "react",
     "hook",
     "scroll-to-element",
-    "scroll"
+    "scroll",
+    "useScroll",
+    "without ref"
   ],
   "module": "dist/use-scroll-to-element.esm.js",
   "devDependencies": {
