@@ -30,10 +30,6 @@ export const {
 * @useScroll - should be placed in the Component element, returning the id to attach to the desired scrolled element.
 
 
-* @scroll - promise function once solved will scroll to the element by the id was generated from useScroll.
-* @useScroll - should be placed in the Component element, returning the id to attach to the desired scrolled element.
-
-
 **./components/Main.js**
 ```tsx
 export const Main = () => {
